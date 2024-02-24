@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <!-- header -->
+
+    <div class="head" >
+        <!-- <span style="margin-right: 40px;"> -->
+            <img src="./images/deadline.jfif" alt="" style="margin-left: 40px; margin-top: 8px;margin-bottom: 8px;" >
+            <span style="margin-left: 40px;">
+        <h1>Now Never Miss The Deadlines <br>
+            <h3>Find Your ToDos At One Place</h3>
+        </h1>
+    </span>
+        <!-- <h3 style="margin-right: 40px;"></h3> -->
+        <div class="navigate">
+        <button class="btn" id="activityLogButton">Activity Log</button>
+        <button class="btn" id="homeButton">Home</button>
+      </div>
+        <!-- Search Button -->
+
+        <div class="searching">
+        <input type="text" id="searchInput" placeholder="Search tasks">
+
+
+<button class="btn" id="searchButton">Search</button>
+</div>
+    </div>
+    <div id="logss">
+
+    </div>
+
+    <!-- header ends-->
+
+    <!-- input fields -->
+
+
+    <div id="to_hide">
+
+      <div class="for_adding_task" id="abc">
+      <button id= "to_add" class="btn"><strong>ADD TASK</strong></button>
+    </div>
+    <div id="container">
+
+      <h1>ADD TASKS</h1>
+        
+        <!-- <input type="text" id="inputText" placeholder="Enter a task"> -->
+        <input type="text" id="taskTitle" placeholder="Enter task title">
+        <input type="text" id="taskContent" placeholder="Enter task content">
+        <!-- <input type="text" id="subtaskTitleInput" placeholder="Enter subtask title">
+        <button id="addSubtaskButton">Add Subtask</button> -->
+        <div class="attrib">
+        <label for="inputTags">Tags</label>
+        <input type="text" id="inputTags" placeholder="Enter tags (comma-separated)">
+        <label for="dueDate">Due Date</label>
+        <input type="date" value="" id="dueDate">
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="priority">Priority</label>
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div style="margin-top: 20px;">
+        <button class="btn" id="saveButton">Save</button>
+        <button class="btn" id="deleteButton">Delete All</button>
+      </div>
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <h2>Filters:</h2>
+        <label style="margin-bottom: 10px;" for="filterDueDate">Due Date Range:</label>
+        <input type="date" id="filterDueDateStart" placeholder="Start Date">
+        <input type="date" id="filterDueDateEnd" placeholder="End Date">
+        <br>
+        <label style="margin-bottom: 10px;" for="filterCategory">Filter by Category:</label>
+        <select id="filterCategory">
+          <option value="">All Categories</option>
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <label style="margin-bottom: 10px;" for="filterPriority">Filter by Priority:</label>
+        <select id="filterPriority">
+          <option value="">All Priorities</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <label  for="showBacklogs">Show Backlogs</label>
+        <input type="checkbox" id="showBacklogs">
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <label  for="sortBy">Sort By:</label>
+        <select id="sortBy">
+            <option value="">All Options</option>
+          <option value="dueDate">Due Date</option>
+          <option value="priority">Priority</option>
+          <!-- Add more options for other sorting criteria as needed -->
+        </select>
+      </div>
+
+      <!-- input fields ends -->
+
+
+      <!-- tasklist -->
+      
+      <div id="taskList" class="task-list">
+        <h1 style="align-self: center;">TASKS</h1>
+      
+      </div>
+
+      <!-- tasklist ends -->
+    
+      <div id="notice"></div>
+      <script src="todo.js"></script>
+    </div>
+</body>
+</html>
