@@ -40,5 +40,4 @@ The Todo App is a powerful task management application that allows users to effi
 ## Getting Started
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/todo-app.git
+  
